@@ -30,59 +30,6 @@ function validatePassword() {
         message.textContent = 'Password must contain at least one special character.';
     } else {
         message.textContent = 'Password is valid!';
-        window.location.href = 'physec.html';
-    }
-}
-
-function validatePhysicalSec() {
-    const answers = {
-        q1: 'B',
-        q2: 'C'
-    };
-
-    let score = 0;
-    let totalQuestions = Object.keys(answers).length;
-
-    for (let question in answers) {
-        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
-        if (selectedOption && selectedOption.value === answers[question]) {
-            score++;
-        }
-    }
-
-    const result = document.getElementById('result');
-    result.textContent = `You got ${score} out of ${totalQuestions} correct.`;
-
-    if(score==2){
-        window.location.href = 'phyclear.html';
-    } else {
-        window.location.href = 'phyfail.html';
-    }
-}
-
-
-function validateCyberSec() {
-    const answers = {
-        q1: 'C',
-        q2: 'C'
-    };
-
-    let score = 0;
-    let totalQuestions = Object.keys(answers).length;
-
-    for (let question in answers) {
-        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
-        if (selectedOption && selectedOption.value === answers[question]) {
-            score++;
-        }
-    }
-
-    const result = document.getElementById('result');
-    result.textContent = `You got ${score} out of ${totalQuestions} correct.`;
-
-    if(score==2){
-        window.location.href = 'cybclear.html';
-    } else {
-        window.location.href = 'cybfail.html';
+        window.location.href = 'learn1.html';
     }
 }
