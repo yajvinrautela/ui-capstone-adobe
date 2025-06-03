@@ -1,0 +1,246 @@
+body {
+    background-color: #171719;
+}
+
+.login {
+    position:fixed;
+    background-color: #f1f1f1;
+    height:175px;
+    width: 33%;
+    padding-bottom: 20px;
+    color:#171719;
+    text-align: center;
+    border-radius: 25px;
+    border-color: #171719;
+    border-style: solid;
+    border-width: 5px;
+    left:33%;
+    flex: auto;
+}
+
+.d1 {
+    color: #262626;
+    background-color: #b5b5b3;
+    padding:5px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:#171719;
+}
+.d2 {
+    background-color: #171719;
+    color: #b5b5b3;
+    text-align: center;
+}
+.d3 {
+    color: #171719;
+    text-align:center;
+}
+
+.d4 {
+    background-color: #262626;
+    color: #b5b5b3;
+}
+
+button {
+    background-color : #262626;
+    color: #b5b5b3;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border:#171719;
+    border-width: 2px;
+    border-style: solid;
+   
+}
+
+.check {
+    position: fixed;
+    right: 33%;
+    top: 550px;
+    height:75px;
+    width: 33%;
+    border-radius: 15px;
+}
+
+button.check:hover {
+    background-color: red ;
+    color: #f1f1f4;
+    animation-name: buttontransrefresh;
+    animation-duration: 0.5s;
+}
+
+
+.refresh {
+    position: fixed;
+    left: 20%;
+    top: 500px;
+    height:75px;
+    width: 250px;
+}
+
+button.refresh:hover {
+    background-color: red ;
+    color: #f1f1f4;
+    box-shadow: 0px 0px 100px red;
+    animation-name: buttontransrefresh;
+    animation-duration: 0.5s;
+ }
+ 
+@keyframes buttontransrefresh{
+    0%{background-color: #262626;color:#b5b5b3;}
+    10%{background-color: #262626;color:#b5b5b3;transform: scale(105%);}
+    100%{background-color: red;color:#f1f1f1;}
+}
+
+.take {
+    position: fixed;
+    right: 20%;
+    top: 500px;
+    height:75px;
+    width: 250px;
+}
+
+button.take:hover {
+    
+    background-color: red ;
+    color: #f1f1f4;
+    box-shadow: 0px 0px 100px red;
+    animation-name: buttontranstake;
+    animation-duration: 0.5s;
+}
+ 
+@keyframes buttontranstake{
+    0%{background-color: #262626;color:#b5b5b3;}
+    10%{background-color: #262626;color:#b5b5b3;transform: scale(105%);}
+    100%{background-color: red;color:#f1f1f1;}
+}
+
+.loginbutton {
+    position: fixed;
+    right: 33%;
+    top: 450px;
+    height:75px;
+    width: 33%;
+}
+
+button.loginbutton:hover {
+    background-color: red ;
+    color: #f1f1f4;
+    animation-name: buttontransloginbutton;
+    animation-duration: 0.5s;
+}
+
+@keyframes buttontransloginbutton{
+    0%{background-color: #262626;color:#b5b5b3;}
+    10%{background-color: #262626;color:#b5b5b3;transform: scale(105%);}
+    100%{background-color: red;color:#f1f1f1;}
+}
+
+.physicalsec {
+    position: fixed;
+    right: 33%;
+    top: 550px;
+    height:75px;
+    width: 33%;
+}
+
+button.physicalsec:hover {
+    background-color: red ;
+    color: #f1f1f4;
+    animation-name: buttontransrefresh;
+    animation-duration: 0.5s;
+}
+
+
+
+.redaccent1 {
+    box-shadow: 0px 0px 100px blue;
+    transform: rotate(20deg);
+    height:200px;
+    width: 40px;
+    border-radius: 25px;
+    left: 100px;
+    top: 100px;
+    position: absolute;
+    animation-name: redaccent1trans;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    z-index: 1;
+
+}
+
+@keyframes redaccent1trans{
+    0% {background-color: #171719; left: 100px; top: 150px;transform: scale(0%);}
+    20%{background-color: #171719; left: 100px; top: 150px;transform: scale(100%);}
+    50%{background-color: red; left: 100px; top: 150px;transform: rotate(25deg);}
+    100%{background-color: red; left: 100px; top: 150px;transform: rotate(25deg);}
+
+}
+
+.redaccent2 {
+    
+    height:200px;
+    width: 40px;
+    border-radius: 25px;
+    left: 155px;
+    top: -100px;
+    position: absolute;
+    animation-name: redaccent2trans;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    z-index: 1;
+}
+
+@keyframes redaccent2trans{
+    0% {background-color: #171719; left: 172px; top: 150px;transform: scale(0%);}
+    20%{background-color: #171719; left: 172px; top: 150px;transform: scale(100%);}
+    50%{box-shadow: 0px 0px 100px red;background-color: red; left: 172px; top: 150px;transform: rotate(-25deg);}
+    100%{box-shadow: 0px 0px 100px red;background-color: red; left: 172px; top: 150px;transform: rotate(-25deg);}
+
+}
+ 
+
+.redaccent3 {
+    
+    height:40px;
+    width: 100px;
+    border-radius: 25px;
+    left: 155px;
+    top: -145px;
+    position: absolute;
+    animation-name: redaccent3trans;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    z-index: 1;
+}
+
+@keyframes redaccent3trans{
+    0% {background-color: #171719; left: 80%; top: 305px;transform: scale(0%);}
+    20%{background-color: #171719; left: 80%; top: 305px;transform: scale(100%);}
+    50%{box-shadow: 0px 0px 100px blue;background-color: red; left: 65px; top: 305px;}
+    100%{box-shadow: 0px 0px 100px blue;background-color: red; left: 65px; top: 305px;}
+
+}
+ 
+.dobe {
+    height: auto;
+    width: 400px;
+    left: 75px;
+    top: 180px;
+    position: absolute;
+    animation-name: dobetrans;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    z-index: 1;
+}
+
+@keyframes dobetrans{
+    0% {left: 50%; top: 150px;transform: scale(0%);}
+    20%{left: 50%; top: 150px;transform: scale(0%);}
+    50%{left: 250px; top: 150px;transform: scale(100%);}
+    100%{left: 250px; top: 150px;transform: scale(100%);};
+}
